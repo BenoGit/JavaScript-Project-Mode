@@ -1,0 +1,38 @@
+* {
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.3fr 0.3fr 3fr 0.3fr;
+    gap: 20px 0px;
+    grid-template-areas:
+      "Header Header"
+      "Heading Heading"
+      "potd potd-desc"
+      "Footer Footer";
+  }
+  
+  .Header { grid-area: Header; 
+            height: 55px;}
+  
+  .Footer { grid-area: Footer; 
+        color: whitesmoke;
+        text-align: left}
+  
+  .Heading { grid-area: Heading; 
+        color: whitesmoke;
+        text-align: center}
+  
+  .potd { grid-area: potd; 
+            height: 500px;}
+            
+            
+        
+  
+  .potd-desc { grid-area: potd-desc; 
+                height: 500px;}
+  
