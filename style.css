@@ -1,17 +1,20 @@
 * {
+    color:whitesmoke;
     background-color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
 }
+
 .grid-container {
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 0.3fr 0.3fr 3fr 0.3fr;
-    gap: 20px 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 0.2fr 3fr 0.3fr;
+    gap: 20px 20px;
     grid-template-areas:
       "Header Header"
       "Heading Heading"
+      "potd-title potd-date"
       "potd potd-desc"
       "Footer Footer";
   }
@@ -21,18 +24,49 @@
   
   .Footer { grid-area: Footer; 
         color: whitesmoke;
-        text-align: left}
+        text-align: left;
+        position: absolute;
+        bottom: 0;}
   
   .Heading { grid-area: Heading; 
         color: whitesmoke;
         text-align: center}
+
+  .potd-title { grid-area: potd-title;
+            color: whitesmoke;
+            text-align: center;
+            font-size: large;
+            background-color: blue;
+            border-radius: 20px;
+            margin-top: auto;}         
   
+  .potd-date { grid-area: potd-date;
+            color: whitesmoke;
+            text-align: center;
+            font-size: large;
+            background-color: blue;
+            border-radius: 20px;
+            margin-top: auto;}
+            
   .potd { grid-area: potd; 
-            height: 500px;}
-            
-            
-        
-  
+            max-height: 500px;
+            text-align: center;}
+
+   #potdimage {max-width: 350px;}
+
   .potd-desc { grid-area: potd-desc; 
-                height: 500px;}
-  
+                height: 350px;
+                text-align: center;}
+   
+   h1{background-color: blue;
+        border-radius: 20px;
+        margin: auto;}
+   
+   u{background-color: blue;}
+    
+   h2{text-decoration: underline;
+    background-color: blue;
+    border-radius: 20px;}
+
+  a{color: blue;
+    font-weight: bold;}
