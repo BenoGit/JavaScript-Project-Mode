@@ -14,14 +14,14 @@
 
             <div class="Header">
                 <img src = "Images/nasa logo.png" height="55px" width="55px"/>
-                    <a id=POTD>&nbsp;&nbsp; POTD &nbsp;&nbsp;</a>
-                    <a id="MRP" onclick="displayMars()">Mars Rover Photos &nbsp;&nbsp;</a>
+                    <a id="POTD" onclick="location.reload()">&nbsp;&nbsp; POTD &nbsp;&nbsp;</a>
+                    <a id="MRP" onclick="displaymarsData()">Mars Rover Photos &nbsp;&nbsp;</a>
             </div>
 
             <div class="Footer"><p>Development by Benjamin Porter March 2021</p></div>
 
             <div class="Heading">
-                <h1> <u>Astronomy Picture Of The Day</u></h1>
+                <h1> <u id=APOTD>Astronomy Picture Of The Day</u></h1>
             </div>
 
             <div class="potd" id="potd">
@@ -38,7 +38,13 @@
 
             <div class="potd-desc">
                 <h2>Description</h2><br>
-                <p3 id="potd-desc"></p3>
+                <p3 id="potd-desc"></p3><br><br><form>
+                    
+                    <input type="text" name="input" placeholder="YYYY-MM-DD"/>
+                   
+                    <input type="submit" id="formsubmit" onclick="changeDate(input)">
+                    
+                   </form>
             </div>
 
         </div>

@@ -16,8 +16,7 @@
       "Heading Heading"
       "potd-title potd-date"
       "potd potd-desc"
-      "Footer Footer";
-  }
+      "Footer Footer";}
   
   .Header { grid-area: Header; 
             height: 55px;}
@@ -60,13 +59,14 @@
    
    h1{background-color: blue;
         border-radius: 20px;
-        margin: auto;}
+        margin-top: auto;}
    
    u{background-color: blue;}
     
    h2{text-decoration: underline;
-    background-color: blue;
-    border-radius: 20px;}
+      background-color: blue;
+      border-radius: 20px;
+      margin-top: auto;}
 
   a{color: blue;
     font-weight: bold;}
