@@ -42,7 +42,18 @@ function displaymarsData(){
     .then (response => response.json())
     .then (data => {
         console.log(data);
-        document.getElementById("potd-date").style.backgroundColor="red";document.getElementById("potd-title").style.backgroundColor="red";document.querySelector("#potdh").style.backgroundColor="red";document.getElementById("APOTD").style.backgroundColor="red";document.querySelector("div.potd-title").style.backgroundColor="red";document.querySelector("div.potd-date").style.backgroundColor="red";document.querySelector("h2").style.backgroundColor="red";document.getElementById("POTD").style.color="red";document.getElementById("MRP").style.color="red";document.getElementById("dateform").style.visibility="hidden";document.getElementById("prev").style.visibility="visible";document.getElementById("next").style.visibility="visible";
+        document.getElementById("potd-date").style.backgroundColor="red";
+        document.getElementById("potd-title").style.backgroundColor="red";
+        document.querySelector("#potdh").style.backgroundColor="red";
+        document.getElementById("APOTD").style.backgroundColor="red";
+        document.querySelector("div.potd-title").style.backgroundColor="red";
+        document.querySelector("div.potd-date").style.backgroundColor="red";
+        document.querySelector("h2").style.backgroundColor="red";
+        document.getElementById("POTD").style.color="red";
+        document.getElementById("MRP").style.color="red";
+        document.getElementById("dateform").style.visibility="hidden";
+        document.getElementById("prev").style.visibility="visible";
+        document.getElementById("next").style.visibility="visible";
         document.getElementById("potd-date").innerText="Date of Photo: "+data.photos[index].earth_date;
         document.getElementById("APOTD").innerText=("Mars Rover Photos");
         document.getElementById("potd-desc").innerHTML=data.photos[index].camera.name+":"+" "+data.photos[index].camera.full_name+"<br>"+"Launch Date:"+" "+data.photos[index].rover.launch_date+"<br>"+"Landing Date:"+" "+data.photos[index].rover.landing_date;
