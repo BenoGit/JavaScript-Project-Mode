@@ -6,48 +6,51 @@
         <link rel="stylesheet" href="style.css"/>
         <title>NASA API Utilization - JavaScript Project Mode</title>
     </head>
+        <body>
+            <main id = "main-content">
 
-    <main id = "main-content">
+                <section class = "grid"></section>
+                <div class="grid-container">
 
-        <section class = "grid"></section>
-        <div class="grid-container">
+                    <div class="Header" id="menu">
+                        <a href="https://nasa.gov"><img src = "Images/nasa logo.png" height="55px" width="55px"></a>
+                            <a id="POTD" onclick="location.reload()">&nbsp;&nbsp; POTD &nbsp;&nbsp;</a>
+                            <a id="MRP" onclick="displaymarsData()">MRP &nbsp;&nbsp;</a>
+                    </div>
 
-            <div class="Header">
-                <img src = "Images/nasa logo.png" height="55px" width="55px"/>
-                    <a id="POTD" onclick="location.reload()">&nbsp;&nbsp; POTD &nbsp;&nbsp;</a>
-                    <a id="MRP" onclick="displaymarsData()">Mars Rover Photos &nbsp;&nbsp;</a>
-            </div>
+                    <div class="Footer"><p>Development by Benjamin Porter March 2021</p></div>
 
-            <div class="Footer"><p>Development by Benjamin Porter March 2021</p></div>
+                    <div class="Heading">
+                        <h1 id="potdh"> <u id=APOTD>Astronomy Picture Of The Day</u></h1>
+                    </div>
 
-            <div class="Heading">
-                <h1> <u id=APOTD>Astronomy Picture Of The Day</u></h1>
-            </div>
+                    <div class="potd" id="potd">
+                        <img id="potdimage">
+                    </div>
+                        
+                    <div class="potd-title">
+                        <p1 id="potd-title" class="potd-title"></p1>
+                    </div>
 
-            <div class="potd" id="potd">
-                <img id="potdimage">
-            </div>
-                
-            <div class="potd-title">
-                <p1 id="potd-title" class="potd-title"></p1>
-            </div>
+                    <div class="potd-date">
+                        <p2 id="potd-date" class="potd-date"></p2>
+                    </div>
 
-            <div class="potd-date">
-                <p2 id="potd-date" class="potd-date"></p2>
-            </div>
+                    <div class="potd-desc">
+                        <h2><button type="button" id="prev" onclick="prev()">&#11013</button>Description<button type="button" id="next" onclick="next()">&#10145</button></h2><br>
+                        <p3 id="potd-desc"></p3><br><br>
+                        <form id="dateform">
+                            
+                            <input type="text" name="input" placeholder="YYYY-MM-DD"/>
+                        
+                            <input type="submit" id="formsubmit" onclick="changeDate(input)">
+                            
+                        </form>
+                        
+                    </div>
 
-            <div class="potd-desc">
-                <h2>Description</h2><br>
-                <p3 id="potd-desc"></p3><br><br><form>
-                    
-                    <input type="text" name="input" placeholder="YYYY-MM-DD"/>
-                   
-                    <input type="submit" id="formsubmit" onclick="changeDate(input)">
-                    
-                   </form>
-            </div>
-
-        </div>
-        <script type ="text/javascript" src="script.js"></script>     
-    </main>
+                </div>
+                <script type ="text/javascript" src="script.js"></script>     
+            </main>
+        </body>
 </html>

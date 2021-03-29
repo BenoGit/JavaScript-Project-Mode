@@ -2,8 +2,8 @@
     color:whitesmoke;
     background-color: black;
     font-family: Georgia, Times, 'Times New Roman', serif;
-    margin: 0;
-    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .grid-container {
@@ -29,12 +29,12 @@
   
   .Heading { grid-area: Heading; 
         color: whitesmoke;
-        text-align: center}
+        text-align: center;}
 
   .potd-title { grid-area: potd-title;
             color: whitesmoke;
             text-align: center;
-            font-size: large;
+            font-size: 20px;
             background-color: blue;
             border-radius: 20px;
             margin-top: auto;}         
@@ -42,22 +42,25 @@
   .potd-date { grid-area: potd-date;
             color: whitesmoke;
             text-align: center;
-            font-size: large;
+            font-size: 20px;
             background-color: blue;
             border-radius: 20px;
             margin-top: auto;}
             
   .potd { grid-area: potd; 
             max-height: 500px;
-            text-align: center;}
+            text-align: center;
+            margin-top: auto;}
 
-   #potdimage {max-width: 350px;}
+   #potdimage {max-width: 100%;
+                max-height: 500px;}
 
   .potd-desc { grid-area: potd-desc; 
                 height: 350px;
-                text-align: center;}
+                    text-align: center;
+                    line-height: 1.5em;}
    
-   h1{background-color: blue;
+   #potdh{background-color: blue;
         border-radius: 20px;
         margin-top: auto;}
    
@@ -68,5 +71,13 @@
       border-radius: 20px;
       margin-top: auto;}
 
-  a{color: blue;
+   a{color: blue;
     font-weight: bold;}
+
+    #prev{
+        visibility: hidden;
+    }
+
+    #next{
+        visibility: hidden;
+    }
